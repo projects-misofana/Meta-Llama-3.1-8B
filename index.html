@@ -2,9 +2,281 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMX Shop</title>
+    <style>
+        /* Global Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: black;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Header Styles */
+        #header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .nav-bar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-bar li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .nav-bar a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .nav-bar a.active {
+            color: #333;
+        }
+
+        /* Hero Styles */
+        #hero {
+            background-image: linear-gradient(to bottom, #333, #555);
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+
+        #hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        #hero p {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+
+        #hero button {
+            background-color: #333;
+            border: none;
+            padding: 10px 20px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        /* Featured Products Styles */
+        #featured-products {
+            background-color: #f9f9f9;
+            padding: 40px;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .product {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .product h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .product p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .product button {
+            background-color: #333;
+            border: none;
+            padding: 10px 20px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        /* Call-to-Action Styles */
+        #call-to-action {
+            background-image: linear-gradient(to bottom, #333, #555);
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+
+        #call-to-action h2 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        #call-to-action p {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+
+        #call-to-action button {
+            background-color: #333;
+            border: none;
+            padding: 10px 20px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        /* Footer Styles */
+        #footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #footer ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #footer li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        #footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
+<!-- Header Section -->
+<header id="header">
+    <nav class="nav-bar">
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
+<!-- Hero Section -->
+<section id="hero">
+    <div class="container">
+        <h1>Welcome to BMX Shop!</h1>
+        <p>Get ready for an adrenaline rush with our top-of-the-line BMX bikes and gear.</p>
+        <button class="btn">Shop Now</button>
+    </div>
+</section>
+
+<!-- Featured Products Section -->
+<section id="featured-products">
+    <div class="container">
+        <h2>Featured Products</h2>
+        <div class="products-grid">
+            <div class="product">
+                <img src="https://picsum.photos/200/300" alt="Product 1">
+                <h3>Bike Name</h3>
+                <p>$999.99</p>
+                <button class="btn">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://picsum.photos/200/300" alt="Product 2">
+                <h3>Bike Name</h3>
+                <p>$999.99</p>
+                <button class="btn">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://picsum.photos/200/300" alt="Product 3">
+                <h3>Bike Name</h3>
+                <p>$999.99</p>
+                <button class="btn">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call-to-Action Section -->
+<section id="call-to-action">
+    <div class="container">
+        <h2>Get Ready for the Ride of Your Life!</h2>
+        <p>Don't miss out on our latest deals and promotions. Sign up now and get 10% off your first purchase!</p>
+        <button class="btn">Sign Up</button>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer id="footer">
+    <div class="container">
+        <ul>
+            <li><a href="#" class="active">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script>
+    // Get all the buttons
+    const buttons = document.querySelectorAll('button');
+
+    // Add event listener to each button
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Show a toast notification when a button is clicked
+            const toast = document.createElement('div');
+            toast.textContent = 'Item added to cart!';
+            toast.style.position = 'fixed';
+            toast.style.top = '50%';
+            toast.style.left = '50%';
+            toast.style.transform = 'translate(-50%, -50%)';
+            toast.style.backgroundColor = '#333';
+            toast.style.color = '#fff';
+            toast.style.padding = '10px 20px';
+            toast.style.borderRadius = '10px';
+            toast.style.zIndex = '1000';
+            document.body.appendChild(toast);
+            setTimeout(() => {
+                toast.remove();
+            }, 2000);
+        });
+    });
+</script>
 </body>
 </html>
